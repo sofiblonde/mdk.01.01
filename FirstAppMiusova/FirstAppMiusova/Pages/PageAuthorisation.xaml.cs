@@ -45,7 +45,7 @@ namespace FirstAppMiusova.Pages
             }
             else
             {
-                MessageBox.Show("Во входе отказано!");
+                MessageBox.Show("Введены неверные данные!");
             }
         }
     }

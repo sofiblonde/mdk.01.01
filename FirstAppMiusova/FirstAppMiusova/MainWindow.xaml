@@ -15,21 +15,17 @@
             <!--Абсолютный размер высоты-->
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="5*"/>
-        </Grid.ColumnDefinitions>
-
+        
         <StackPanel Grid.Column="1"
                     Orientation="Horizontal"
                     HorizontalAlignment="Center">
             <TextBlock Text="Программа на WPF"
                        Style="{StaticResource TxbStyle}"/>
             <Button Height="50" Width="150"
-                    Content="Hello"
+                    Content="Привет!"
                     FontSize="18"
                     Margin="5"
-                    Background="BlueViolet"
+                    Background= "LimeGreen"
                     Name="BtnHello"
                     Click="BtnHello_Click"/>
         </StackPanel>

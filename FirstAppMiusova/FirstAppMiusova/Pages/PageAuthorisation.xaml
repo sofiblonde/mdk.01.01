@@ -26,7 +26,7 @@
                            Style="{StaticResource TxtAuth}"/>
                 <PasswordBox Name="PsbPassword"
                              Height="50" Width="150"
-                             PasswordChar="@"/>
+                             PasswordChar="*"/>
             </StackPanel>
             <Button Name="BtnAuth"
                     Height="50" Width="150"
