@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstAppMiusova.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace FirstAppMiusova.Pages
         public PageAuthorisation()
         {
             InitializeComponent();
+        }
+
+        private void BtnReg_Click(object sender, RoutedEventArgs e)
+        {
+            WindowRegistration windowRegistration = new WindowRegistration();
+            windowRegistration.Show();
         }
 
         private void BtnAuth_Click(object sender, RoutedEventArgs e)

@@ -16,3 +16,5 @@ C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\First
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\App.baml
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PageAuthorisation.g.cs
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PageAuthorisation.baml
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Windows\WindowRegistration.g.cs
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Windows\WindowRegistration.baml
