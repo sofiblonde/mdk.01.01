@@ -26,14 +26,19 @@
                            Style="{StaticResource TxtAuth}"/>
                 <PasswordBox Name="PsbPassword"
                              Height="50" Width="150"
-                             PasswordChar="@"/>
+                             PasswordChar="*"/>
             </StackPanel>
             <Button Name="BtnAuth"
-                    Height="50" Width="150"
+                    Height="50" Width="170"
                     Content="Войти"
                     Click="BtnAuth_Click"
                     Style="{StaticResource BtnStyle}"/>
-            
+
+            <Button Name="BtnReg"
+                    Height="50" Width="170"
+                    Content="Зарегистрироваться"
+                    Click="BtnReg_Click"
+                    Style="{StaticResource BtnStyle}"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstAppMiusova.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,12 @@ namespace FirstAppMiusova.Pages
             InitializeComponent();
         }
 
+        private void BtnReg_Click(object sender, RoutedEventArgs e)
+        {
+            WindowRegistration windowRegistration = new WindowRegistration();
+            windowRegistration.Show();
+        }
+
         private void BtnAuth_Click(object sender, RoutedEventArgs e)
         {
             //ввод данных из текстовых полей
@@ -45,7 +52,7 @@ namespace FirstAppMiusova.Pages
             }
             else
             {
-                MessageBox.Show("Во входе отказано!");
+                MessageBox.Show("Введены неверные данные!");
             }
         }
     }

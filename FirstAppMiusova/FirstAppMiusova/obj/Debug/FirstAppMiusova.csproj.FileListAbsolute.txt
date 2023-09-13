@@ -2,7 +2,6 @@ C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\bin\Debug\First
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\bin\Debug\FirstAppMiusova.exe
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\bin\Debug\FirstAppMiusova.pdb
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\FirstAppMiusova.csproj.AssemblyReference.cache
-C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\FirstAppMiusova.csproj.SuggestedBindingRedirects.cache
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\MainWindow.g.cs
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\App.g.cs
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\FirstAppMiusova_MarkupCompile.cache
@@ -17,3 +16,5 @@ C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\First
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\App.baml
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PageAuthorisation.g.cs
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PageAuthorisation.baml
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Windows\WindowRegistration.g.cs
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Windows\WindowRegistration.baml

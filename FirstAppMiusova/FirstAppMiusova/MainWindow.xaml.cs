@@ -27,7 +27,8 @@ namespace FirstAppMiusova
             Classes.ClassFrame.frmObj = FrmMain;
 
             //Переход на страницу авторизации
-            Classes.ClassFrame.frmObj.Navigate(new Pages.PageAuthorisation());        
+            Classes.ClassFrame.frmObj.Navigate(new Pages.PageAuthorisation());
+            //Classes.ClassFrame.frmObj.Navigate(new Windows.WindowRegistration());
         }
 
         private void BtnHello_Click(object sender, RoutedEventArgs e)
