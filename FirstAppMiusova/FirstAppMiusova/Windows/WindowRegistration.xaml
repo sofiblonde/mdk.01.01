@@ -12,6 +12,14 @@
             <RowDefinition Height="4*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        
+        <StackPanel Grid.Column="1"
+            Orientation="Horizontal"
+            HorizontalAlignment="Center">
+            <TextBlock Text="РЕГИСТРАЦИЯ"/>
+        </StackPanel>
+        <Frame Grid.Row="1" Grid.Column="1"
+               Name="FrmReg">
+            <TextBlock Text="Фамилия Имя отчество"/>
+        </Frame>
     </Grid>
 </Window>
