@@ -1,0 +1,79 @@
+﻿<Page x:Class="FirstAppMiusova.Pages.PagePR2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FirstAppMiusova.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PagePR2">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Задание: По указанию преподавателя выберите индивидуальное задание из нижеприведенного списка. В качестве f(x) использовать по выбору: sh(x), x2, ex. "
+                       Style="{StaticResource TxtStyleTaskPR}"/>
+            
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Grid.Row="1">
+            <TextBlock Text="Введите X:"
+                       Style="{StaticResource TxtInputStylePR}"/>
+            <TextBox Name="TxtPR2X"
+                     Height="25" Width="150"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Grid.Row="2">
+            <TextBlock Text="Введите Y:"
+                       Style="{StaticResource TxtInputStylePR}"/>
+            <TextBox Name="TxtPR2Y"
+                     Height="25" Width="150"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Grid.Row="3">
+            <TextBlock Text="Введите Z:"
+                       Style="{StaticResource TxtInputStylePR}"/>
+            <TextBox Name="TxtPR2Z"
+                     Height="25" Width="150"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    Grid.Row="4">
+            <TextBlock Text="Результат: "
+                       Style="{StaticResource TxtStyleResultPR}"/>
+            <ListBox Name="LstResultPR2"
+                     Width="250"
+                     Height="100"/>
+            <!-- ScrollBar.Scroll="LstResult_Scroll"-->
+        </StackPanel>
+        <DockPanel Grid.Row="5"
+                   HorizontalAlignment="Center">
+        <Button Name="BtnSolvePR2"
+                Style="{StaticResource BtnStylePR}"
+                Margin="0 0 10 0"
+                Content="Выполнить"
+                Click="BtnSolvePR2_Click"/>
+        <Button Name="BtnClearPR2"
+                Style="{StaticResource BtnStylePR}"
+                Margin="0 0 10 0"
+                Content="Очистить"
+                Click="BtnClearPR2_Click"/>
+        </DockPanel>
+        <Button Name="BtnNextPR2"
+                Style="{StaticResource BtnStylePR}"
+                Grid.Row="6"
+                Content="Далее"
+                Click="BtnNextPR2_Click"/>
+    </Grid>
+</Page>

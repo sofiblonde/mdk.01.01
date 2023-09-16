@@ -56,6 +56,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\PagePR1.xaml.cs">
+      <DependentUpon>PagePR1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagePR2.xaml.cs">
+      <DependentUpon>PagePR2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\WindowRegistration.xaml.cs">
       <DependentUpon>WindowRegistration.xaml</DependentUpon>
     </Compile>
@@ -73,6 +79,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\PageAuthorisation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagePR1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagePR2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

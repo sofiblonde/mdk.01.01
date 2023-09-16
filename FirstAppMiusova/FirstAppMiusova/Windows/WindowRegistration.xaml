@@ -19,7 +19,8 @@
         </StackPanel>
         <Frame Grid.Row="1" Grid.Column="1"
                Name="FrmReg">
-            <TextBlock Text="Фамилия Имя отчество"/>
+            
+           <!-- <TextBlock Text="Фамилия Имя отчество"/> -->
         </Frame>
     </Grid>
 </Window>

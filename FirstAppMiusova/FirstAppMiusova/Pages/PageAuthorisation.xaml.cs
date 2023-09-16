@@ -44,6 +44,7 @@ namespace FirstAppMiusova.Pages
                 if (password == "1")
                 {
                     MessageBox.Show("Вход выполнен!");
+                    Classes.ClassFrame.frmObj.Navigate(new Pages.PagePR1());
                 }
                 else
                 {

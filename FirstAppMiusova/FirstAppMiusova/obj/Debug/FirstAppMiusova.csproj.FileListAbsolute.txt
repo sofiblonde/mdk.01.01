@@ -18,3 +18,8 @@ C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PageAuthorisation.baml
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Windows\WindowRegistration.g.cs
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Windows\WindowRegistration.baml
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\FirstAppMiusova.csproj.SuggestedBindingRedirects.cache
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PagePR1.g.cs
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PagePR1.baml
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PagePR2.g.cs
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PagePR2.baml
