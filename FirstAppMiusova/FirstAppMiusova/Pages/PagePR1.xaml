@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FirstAppMiusova.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="600" d:DesignWidth="800"
       Title="PagePR1">
 
     <Grid>
@@ -54,8 +54,8 @@
                        Style="{StaticResource TxtStyleResultPR}"/>
             <ListBox Name="LstResultPR1"
                      Width="250"
-                     Height="100"/>
-            <!--.Scroll="LstResultPR1_Scroll"-->
+                     Height="100"
+                     ScrollBar.Scroll="LstResultPR1_Scroll"/>
         </StackPanel>
         <Button Name="BtnSolvePR1"
                 Style="{StaticResource BtnStylePR}"

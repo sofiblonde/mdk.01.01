@@ -25,24 +25,41 @@ namespace FirstAppMiusova.Pages
             InitializeComponent();
         }
 
-      //  private void LstResultPR2_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
-        //{
-
-        //}
-
-        private void BtnClearPR2_Click(object sender, RoutedEventArgs e)
+        private void LstResultPR2_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
         {
-
+            
         }
 
         private void BtnSolvePR2_Click(object sender, RoutedEventArgs e)
         {
+            double x = Convert.ToDouble(TxtPR2X.Text);
+            double y = Convert.ToDouble(TxtPR2Y.Text);
+            double z = Convert.ToDouble(TxtPR2Z.Text);
 
+            double d = x + y + z;
+            LstResultPR2.Items.Add("ПР№2 ИСП.21.2А Миусова С. А.");
+            LstResultPR2.Items.Add($"x={x}");
+            LstResultPR2.Items.Add($"x={y}");
+            LstResultPR2.Items.Add($"x={z}");
+            LstResultPR2.Items.Add($"x={d}");
+        }
+
+        private void BtnClearPR2_Click(object sender, RoutedEventArgs e)
+        {
+            TxtPR2X.Clear();
+            TxtPR2Y.Clear();
+            TxtPR2Z.Clear();
+            LstResultPR2.Items.Clear();
+        }
+        
+        private void BtnBackPR2_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.ClassFrame.frmObj.Navigate(new Pages.PagePR1());
         }
 
         private void BtnNextPR2_Click(object sender, RoutedEventArgs e)
         {
-
+           Classes.ClassFrame.frmObj.Navigate(new Pages.PagePR3());
         }
     }
 }

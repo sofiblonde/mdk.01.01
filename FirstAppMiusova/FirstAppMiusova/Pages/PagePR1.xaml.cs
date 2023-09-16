@@ -25,14 +25,10 @@ namespace FirstAppMiusova.Pages
             InitializeComponent();
         }
 
-        //private void LstResultPR1_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
-        //{
-         
-        //}
 
         private void BtnNextPR1_Click(object sender, RoutedEventArgs e)
         {
-           // NavigationService.Navigate(new Uri("PagePR2.xaml",uriKind: System.UriKind.Relative));
+            Classes.ClassFrame.frmObj.Navigate(new Pages.PagePR2());
         }
 
         private void BtnSolvePR1_Click(object sender, RoutedEventArgs e)
@@ -47,6 +43,11 @@ namespace FirstAppMiusova.Pages
             LstResultPR1.Items.Add($"x={y}");
             LstResultPR1.Items.Add($"x={z}");
             LstResultPR1.Items.Add($"x={g}");
+        }
+
+        private void LstResultPR1_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
+        {
+
         }
     }
 }
