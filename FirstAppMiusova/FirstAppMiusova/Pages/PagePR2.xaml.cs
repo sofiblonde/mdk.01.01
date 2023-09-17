@@ -37,11 +37,38 @@ namespace FirstAppMiusova.Pages
             double z = Convert.ToDouble(TxtPR2Z.Text);
 
             double d = x + y + z;
-            LstResultPR2.Items.Add("ПР№2 ИСП.21.2А Миусова С. А.");
+            LstResultPR2.Items.Add("ПР№2 ИСП.21.2А Миусова С. А. Вариант 4");
             LstResultPR2.Items.Add($"x={x}");
-            LstResultPR2.Items.Add($"x={y}");
-            LstResultPR2.Items.Add($"x={z}");
-            LstResultPR2.Items.Add($"x={d}");
+            LstResultPR2.Items.Add($"y={y}");
+            LstResultPR2.Items.Add($"z={z}");
+            int n = 0;
+            if (RbtShxPR2.IsChecked == true) n = 1;
+            else if (RbtX2PR2.IsChecked == true) n = 2;
+            switch (n)
+            {
+                case 0:
+                    if (x>y) d = Math.Pow(((Math.Exp(x) - Math.Exp(-x)) / 2) - y, 3) + Math.Atan((Math.Exp(x) - Math.Exp(-x)) / 2);
+                    else if (x<y) d = Math.Pow(y-((Math.Exp(x) - Math.Exp(-x)) / 2), 3) + Math.Atan((Math.Exp(x) - Math.Exp(-x)) / 2);
+                    else d = Math.Pow(y + ((Math.Exp(x) - Math.Exp(-x)) / 2), 3)+ 0.5;
+                    LstResultPR2.Items.Add($"Результат d={Math.Round(d, 3)}");
+                    break;
+                case 1:
+                    if (x>y) d = Math.Pow(Math.Pow(x,2)- y, 3) + Math.Atan(Math.Pow(x, 2));
+                    else if (x<y) d = Math.Pow(y-Math.Pow(x, 2), 3) + Math.Atan(Math.Pow(x, 2));
+                    else d = Math.Pow(y + (Math.Pow(x, 2)), 3)+ 0.5;
+                    LstResultPR2.Items.Add($"Результат d={Math.Round(d, 3)}");
+                    break;
+                case 2:
+                    if (x > y) d = Math.Pow(Math.Exp(x) - y, 3) + Math.Atan(Math.Exp(x));
+                    else if (x < y) d = Math.Pow(y - Math.Exp(x), 3) + Math.Atan(Math.Exp(x));
+                    else d = Math.Pow(y + (Math.Exp(x)), 3) + 0.5;
+                    LstResultPR2.Items.Add($"Результат d={Math.Round(d, 3)}");
+                    break;
+                default:
+                    LstResultPR2.Items.Add("Решение не найдено");
+                    break;
+            }
+
         }
 
         private void BtnClearPR2_Click(object sender, RoutedEventArgs e)

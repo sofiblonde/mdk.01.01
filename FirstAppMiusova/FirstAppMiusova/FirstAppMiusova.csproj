@@ -65,6 +65,9 @@
     <Compile Include="Pages\PagePR3.xaml.cs">
       <DependentUpon>PagePR3.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PagePR4.xaml.cs">
+      <DependentUpon>PagePR4.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\WindowRegistration.xaml.cs">
       <DependentUpon>WindowRegistration.xaml</DependentUpon>
     </Compile>
@@ -94,6 +97,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\PagePR3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PagePR4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

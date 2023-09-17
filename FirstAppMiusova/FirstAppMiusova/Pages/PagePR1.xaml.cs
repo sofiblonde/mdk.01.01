@@ -38,11 +38,11 @@ namespace FirstAppMiusova.Pages
             double z = Convert.ToDouble(TxtPR1Z.Text);
 
             double g = (Math.Pow(y, (x + 1))) / (Math.Pow(Math.Abs(y - 2), 1.0 / 3.0) + 3) + (x + y / 2) / (2 * Math.Abs(x + y)) * Math.Pow((x + 1), (-1 / Math.Sin(z)));
-            LstResultPR1.Items.Add("ПР№1 ИСП.21.2А Миусова С. А.");
+            LstResultPR1.Items.Add("ПР№1 ИСП.21.2А Миусова С. А. Вариант 14");
             LstResultPR1.Items.Add($"x={x}");
-            LstResultPR1.Items.Add($"x={y}");
-            LstResultPR1.Items.Add($"x={z}");
-            LstResultPR1.Items.Add($"x={g}");
+            LstResultPR1.Items.Add($"y={y}");
+            LstResultPR1.Items.Add($"z={z}");
+            LstResultPR1.Items.Add($"g={g}");
         }
 
         private void LstResultPR1_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)

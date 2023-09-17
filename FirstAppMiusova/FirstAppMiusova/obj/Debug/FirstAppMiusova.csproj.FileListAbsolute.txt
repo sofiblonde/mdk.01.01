@@ -24,3 +24,5 @@ C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PagePR2.baml
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PagePR3.g.cs
 C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PagePR3.baml
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PagePR4.g.cs
+C:\Users\sofia\Desktop\mdk.01.01\FirstAppMiusova\FirstAppMiusova\obj\Debug\Pages\PagePR4.baml

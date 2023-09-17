@@ -31,8 +31,8 @@
             <TextBox Name="TxtPR2X"
                      Height="25" Width="150"/>
             <RadioButton GroupName="FunctionPR2"
-                         Name="RbtSinPR2"
-                         Content="Sin(x)"
+                         Name="RbtShxPR2"
+                         Content="Sh(x)"
                          IsChecked="True"
                          Margin="20 10 10 0"/>
         </StackPanel>
@@ -44,8 +44,8 @@
             <TextBox Name="TxtPR2Y"
                      Height="25" Width="150"/>
             <RadioButton GroupName="FunctionPR2"
-                         Name="RbtCosPR2"
-                         Content="Cos(x)"
+                         Name="RbtX2PR2"
+                         Content="X2"
                          IsChecked="True"
                          Margin="20 10 10 0"/>          
         </StackPanel>
@@ -57,8 +57,8 @@
             <TextBox Name="TxtPR2Z"
                      Height="25" Width="150"/>
             <RadioButton GroupName="FunctionPR2"
-                         Name="RbtExpPR2"
-                         Content="Exp(x)"
+                         Name="RbtExPR2"
+                         Content="Ex"
                          IsChecked="True"
                          Margin="20 10 10 0"/>      
         </StackPanel>
