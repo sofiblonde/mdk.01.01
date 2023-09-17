@@ -32,23 +32,28 @@ namespace FirstAppMiusova.Pages
 
         private void BtnSolvePR3_Click(object sender, RoutedEventArgs e)
         {
-            double X0 = Convert.ToDouble(TxtPR3X0.Text);
-            double Xk = Convert.ToDouble(TxtPR3Xk.Text);
-            double Dx = Convert.ToDouble(TxtPR3Dx.Text);
-            double A = Convert.ToDouble(TxtPR3A.Text);
-
-            double b = X0 + Xk + Dx + A;
+            double X0 = double.Parse(TxtPR3X0.Text);
+            double Xk = double.Parse(TxtPR3Xk.Text);
+            double Dx = double.Parse(TxtPR3Dx.Text);
+            double b = double.Parse(TxtPR3B.Text);
+            double y;
+            double x = X0;
             LstResultPR3.Items.Add("ПР№2 ИСП.21.2А Миусова С. А.");
-            LstResultPR3.Items.Add($"x={X0}");
-            LstResultPR3.Items.Add($"x={Xk}");
-            LstResultPR3.Items.Add($"x={Dx}");
-            LstResultPR3.Items.Add($"x={A}");
-            LstResultPR3.Items.Add($"x={b}");
+            LstResultPR3.Items.Add($"x0={X0}");
+            LstResultPR3.Items.Add($"xk={Xk}");
+            LstResultPR3.Items.Add($"dx={Dx}");
+            LstResultPR3.Items.Add($"b={b}");
+            while (x <= (Xk + Dx) / 2)
+            {
+                y = Math.Pow(x, 5/2 - b) + (Math.Log10(Math.Pow(x, 2) + 12.7));
+                LstResultPR3.Items.Add($"x ={x}, y={y}");
+                x = x + Dx;
+            }
         }
 
         private void BtnClearPR3_Click(object sender, RoutedEventArgs e)
         {
-            TxtPR3A.Clear();
+            TxtPR3B.Clear();
             TxtPR3Dx.Clear();
             TxtPR3X0.Clear();
             TxtPR3Xk.Clear();

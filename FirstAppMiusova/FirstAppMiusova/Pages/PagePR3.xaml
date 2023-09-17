@@ -50,9 +50,9 @@
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Center"
                     Grid.Row="4">
-            <TextBlock Text="A"
+            <TextBlock Text="B"
                        Style="{StaticResource TxtInputStylePR}"/>
-            <TextBox Name="TxtPR3A"
+            <TextBox Name="TxtPR3B"
                      Height="25" Width="150"/>
         </StackPanel>
         <StackPanel Orientation="Vertical"
