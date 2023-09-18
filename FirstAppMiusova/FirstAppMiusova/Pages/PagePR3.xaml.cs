@@ -67,7 +67,7 @@ namespace FirstAppMiusova.Pages
 
         private void BtnNextPR3_Click(object sender, RoutedEventArgs e)
         {
-            Classes.ClassFrame.frmObj.Navigate(new Pages.PagePR4());
+            Classes.ClassFrame.frmObj.Navigate(new Pages.PagePR6());    
         }
     }
 }
