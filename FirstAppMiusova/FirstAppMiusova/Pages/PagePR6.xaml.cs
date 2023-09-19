@@ -28,18 +28,45 @@ namespace FirstAppMiusova.Pages
 
         private void BtnListFromFilePR6_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void BtnResultPR6_Click(object sender, RoutedEventArgs e)
-        {
-
-                
             StreamReader sr = new StreamReader(@"Строки.txt", Encoding.UTF8);
 
             while (!sr.EndOfStream)
             {
                 LstInputPR6.Items.Add(sr.ReadLine());
+            }
+        }
+
+        private void BtnResultPR6_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                int index = LstInputPR6.SelectedIndex;
+                string str = (string)LstInputPR6.Items[index];
+                int len = str.Length;
+                int count = 0;
+                int i = 0;
+                string[] str1 = str.Split();
+                for  (i = 0; i < str1.Length; i++)
+                {
+                    char Letter = char.ToLower(str1[i][0]);
+                    str1[i] = Letter + str1[i].Substring(1);
+                }
+
+                string line = LstInputPR6.SelectedItem.ToString();
+                string[] reverseLine = line.Split();
+                TxbRezult.Text = string.Join(", ", reverseLine);
+
+                TxbRezult.Text = string.Join(" ", str1);
+                StreamWriter sw = new StreamWriter(@"Result.txt");
+                sw.WriteLine($"Номер строки: {index}");
+                sw.WriteLine($"Исходная строка: {index}");
+                sw.WriteLine($"Новая строка: {TxbRezult.Text}");
+                sw.Close();
+            }
+
+            catch (Exception ex) 
+            { 
+                MessageBox.Show( ex.Message );
             }
         }
 

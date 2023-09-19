@@ -18,22 +18,21 @@
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
         <StackPanel>
-            <TextBlock Text="Задание:"
+            <TextBlock Text="Задание: Дана строка символов, содержащая некоторый текст на русском языке. Заменить все большие буквы ‘А’ на символ ‘*’. "
                      Style="{StaticResource TxtStyleTaskPR}"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Center"
                     Grid.Row="1">
             <ListBox Name="LstInputPR6"
-                     Width="500" Height="225"/>
+                     Width="500" Height="190"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Center"
                     Grid.Row="2">
             <TextBlock Name="TxbRezult"
                        Text="Количество пробелов:"
-                       Style="{StaticResource TxtStyleResultPR}"
-                       Margin="0 0 10 0"/>
+                       Style="{StaticResource TxtStyleResultPR}"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Center"
