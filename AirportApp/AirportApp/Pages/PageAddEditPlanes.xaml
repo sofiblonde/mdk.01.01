@@ -1,0 +1,76 @@
+﻿<Page x:Class="AirportApp.Pages.PageAddEditPlanes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AirportApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageAddEditPlanes">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Vertical"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Номер самолёта" Style="{StaticResource TxBlockAdd}"/>
+                    <TextBox x:Name="tboxPlAircraftNumber" Text="{Binding PlAircraftNumber}"
+                      Style="{StaticResource TxBoxAdd}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Число мест" Style="{StaticResource TxBlockAdd}"/>
+                    <TextBox x:Name="tboxPlPlaces" Text="{Binding PlPlaces}"
+                      Style="{StaticResource TxBoxAdd}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Скорость полёта" Style="{StaticResource TxBlockAdd}"/>
+                    <TextBox x:Name="tboxPlSpeedFlight" Text="{Binding PlSpeedFlight}"
+                      Style="{StaticResource TxBoxAdd}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Количество проданных билетов" Style="{StaticResource TxBlockAdd}"/>
+                    <TextBox x:Name="tboxPlTicketsSold" Text="{Binding PlTicketsSold}"
+                      Style="{StaticResource TxBoxAdd}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Расстояние:"
+                           Style="{StaticResource TxBlockAdd}"/>
+                    <TextBox x:Name="tboxAirDistance" Text="{Binding AirDistance}"
+                         Style="{StaticResource TxBoxAdd}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Пункт вылета:" 
+                           Style="{StaticResource TxBlockAdd}"/>
+                    <ComboBox x:Name="cboxAirDeparture"
+                          SelectedValue="{Binding AirDeparture}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Пункт назначения:"
+                           Style="{StaticResource TxBlockAdd}"/>
+                    <ComboBox x:Name="cboxAirPointDestination"
+                          SelectedValue="{Binding AirPointDestination}"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" 
+       Style="{StaticResource LeftAndBotPanelGrid}">
+            <StackPanel Orientation="Horizontal"
+                 VerticalAlignment="Center"
+                 HorizontalAlignment="Center">
+                <Button x:Name="btnSave" Content="Сохранить"
+                 Click="btnSave_Click"
+                 Style="{StaticResource ButtonMain}"/>
+                <Button x:Name="btnGoBack" Content="Вернуться"
+                 Click="btnGoBack_Click"
+                 Style="{StaticResource ButtonMain}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

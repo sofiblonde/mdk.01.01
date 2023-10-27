@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Airports">
+      <EntityTypeMapping TypeName="Model.Airports">
+        <MappingFragment StoreEntitySet="Airports">
+          <ScalarProperty Name="AirportId" ColumnName="AirportId" />
+          <ScalarProperty Name="AirportName" ColumnName="AirportName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Planes">
+      <EntityTypeMapping TypeName="Model.Planes">
+        <MappingFragment StoreEntitySet="Planes">
+          <ScalarProperty Name="PlaneID" ColumnName="PlaneID" />
+          <ScalarProperty Name="PlaneNumber" ColumnName="PlaneNumber" />
+          <ScalarProperty Name="PlanePlaces" ColumnName="PlanePlaces" />
+          <ScalarProperty Name="PlaneSpeed" ColumnName="PlaneSpeed" />
+          <ScalarProperty Name="PlaneDeparture" ColumnName="PlaneDeparture" />
+          <ScalarProperty Name="PlaneArrival" ColumnName="PlaneArrival" />
+          <ScalarProperty Name="PlaneDistance" ColumnName="PlaneDistance" />
+          <ScalarProperty Name="PlaneSellPlaces" ColumnName="PlaneSellPlaces" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
